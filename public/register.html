@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title> Nodejs Form </title>
+	<style>
+		h1 {
+            color: #2196F3;
+            font-size: 2.5rem;
+        }
+        label {
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+        input {
+            padding: 0.5rem 0.2rem;
+            width: 18%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            border: none;
+            padding: 0.7rem 1rem;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+	</style>
+</head>
+<body align='center'>
+        <header>
+		<h1>Register</h1>
+	</header>
+
+	<form action="/register" method="POST">
+				
+        <label>Name</label>
+        <input type ="text" id = 'name' name="name" placeholder="Bhavana" required>
+        <br><br>
+
+        <label>Age</label>
+        <input type="number" id = "age" name="age" required>
+        <br><br>
+        <button type ="submit" style="background: #8BC34A; margin-right: 10px">Submit</button>
+        <button type ="reset">Cancel</button>
+    </form>
+    <br><br>
+
+</body>
+</html>
