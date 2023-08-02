@@ -15,7 +15,7 @@ pipeline{
             }
         }
         
-      stage('Install pm2'){
+      stage('Build'){
             steps {
                 bat 'npm install pm2 -g'
             }
