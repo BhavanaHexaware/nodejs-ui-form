@@ -15,10 +15,16 @@ pipeline{
             }
         }
         
-       stage('Test') {
-          steps {
-            bat 'node test'
-          }
+      stage('Install pm2'){
+            steps {
+                bat 'npm install pm2 -g'
+            }
+        }
+        
+        stage('Deploy'){
+            steps {
+                bat 'pm2 startOrRestart pm2.config.json'
+            }
         }
     }
 }
